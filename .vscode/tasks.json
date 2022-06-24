@@ -6,11 +6,13 @@
             "label": "C/C++: gcc 生成活动文件",
             "command": "/usr/bin/gcc",
             "args": [
-                "-fdiagnostics-color=always",
+                "-fPIC",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}.so",
+                "-shared",
+                "-I/usr/include/python2.7"
             ],
             "options": {
                 "cwd": "${fileDirname}"
