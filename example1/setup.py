@@ -5,7 +5,14 @@
 
 """
 
-
 from distutils.core import setup, Extension
 
-setup(name = 'test1', version = '1.0', ext_modules = [Extension('test1', ['test1.c'])])
+setup(
+    name='test1',
+    version='1.0',
+    description="python interface test1 c library function",
+    author="lambor",
+    ext_modules=[Extension('test1', ['test1.c'])]
+)
+
+print "-----build---done--------------"
