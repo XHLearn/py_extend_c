@@ -4,6 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
+                "/usr/include/c++/**",
+                "/usr/lib/gcc/**",
                 "/usr/include/python2.7/**"
             ],
             "defines": [],
