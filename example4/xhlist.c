@@ -23,7 +23,7 @@ static void xhlist_print(PyXHListObject *obj, FILE *fp, int flags)
         i = obj->ob_size;
         while (--i >= 0)
         {
-            fprintf(fp, "%ld", obj->item[i]);
+            fprintf(fp, "%d", obj->item[i]);
         }
     }
     fprintf(fp, "]");
